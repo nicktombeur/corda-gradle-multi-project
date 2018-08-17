@@ -1,0 +1,11 @@
+buildscript {
+    ext {
+        // Moved here otherwise I get the following error:
+
+        // Cannot get property 'quasar_version' on extra properties extension as it does not exist
+        quasar_version = '0.7.9'
+
+        //Cannot get property 'corda_release_version' on extra properties extension as it does not exist
+        corda_release_version = '3.2-corda'
+    }
+}

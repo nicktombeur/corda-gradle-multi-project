@@ -1,0 +1,9 @@
+rootProject.name = 'corda-gradle-multi-project'
+
+include 'projectA'
+
+include 'app'
+project(':app').projectDir = new File(settingsDir, 'node/app')
+
+include ':app:cordapp'
+include ':app:cordapp-contracts-states'
